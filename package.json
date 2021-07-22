@@ -1,0 +1,19 @@
+{
+  "name": "justmockit",
+  "version": "1.0.0",
+  "description": "This app is created to simulate api's.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flamestro/justmockit.git"
+  },
+  "author": "Ahmet Kilic @flamestro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flamestro/justmockit/issues"
+  },
+  "homepage": "https://github.com/flamestro/justmockit#readme"
+}
