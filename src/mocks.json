@@ -1,0 +1,25 @@
+[
+  {
+    "method": "GET",
+    "path": "/test",
+    "res": {
+      "status": 200,
+      "body": {
+        "message": "mockResponse"
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/test",
+    "query": {
+      "id": "2"
+    },
+    "res": {
+      "status": 201,
+      "body": {
+        "message": "differentResponse"
+      }
+    }
+  }
+]
