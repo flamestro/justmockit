@@ -1,7 +1,9 @@
 [
   {
-    "method": "GET",
-    "path": "/test",
+    "req": {
+      "method": "GET",
+      "path": "/test"
+    },
     "res": {
       "status": 200,
       "body": {
@@ -10,10 +12,12 @@
     }
   },
   {
-    "method": "GET",
-    "path": "/test",
-    "query": {
-      "id": "2"
+    "req": {
+      "method": "GET",
+      "path": "/test",
+      "query": {
+        "id": "2"
+      }
     },
     "res": {
       "status": 201,
