@@ -28,7 +28,7 @@ app.use((req, res) => {
     const checkIfMockFitsRequest = (request, mock) => {
         return request.method.toUpperCase() === mock.req.method.toUpperCase()
             && request.path === mock.req.path
-            && (util.isDeepStrictEqual(req.query, mock.req.query) || !mock.req.query && !req.query.keys);
+            && (util.isDeepStrictEqual(req.query, mock.req.query) || !mock.req.query || !req.query.keys);
     }
 
     for (let mock of mocksSortedByPriority) {
