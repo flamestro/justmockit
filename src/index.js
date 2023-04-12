@@ -34,9 +34,13 @@ app.use((req, res) => {
 
     for (let mock of mocksSortedByPriority) {
         if (checkIfMockFitsRequest(req, mock)) {
-                res.status(mock.res.status)
-                    .header({"content-type": "application/json"})
-                    .send(mock.res.body)
+            let response = res.status(mock.res.status)
+            for(let headerKey of Object.keys(mock.res.headers)) {
+                let headerObj = {}
+                headerObj[headerKey] = mock.res.headers[headerKey]
+                response.header(headerObj)
+            }
+            response.header({"content-type": "application/json"}).send(mock.res.body)
                 return;
         }
     }

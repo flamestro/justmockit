@@ -25,5 +25,20 @@
         "message": "differentResponse"
       }
     }
+  },
+  {
+    "req": {
+      "method": "GET",
+      "path": "/withHeader"
+    },
+    "res": {
+      "status": 201,
+      "body": {
+        "message": "header"
+      },
+      "headers": {
+        "test": 123
+      }
+    }
   }
 ]
