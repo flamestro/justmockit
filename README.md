@@ -1,4 +1,4 @@
-# Just Mock It!
+![Just Mock It!](.github/assets/title.png)
 
 Sometimes you come across situations in which you need to use an 
 api that is either not ready yet or does not behave in an expected way on local.
