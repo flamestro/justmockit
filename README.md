@@ -38,5 +38,3 @@ Response:
 Your requests will be mocked based on this prioritization:
 1. A mock with an equal query exists.
 2. The order of the mocks in `/assets/mocks.json`
-
-# Run MockServer on Different Port
