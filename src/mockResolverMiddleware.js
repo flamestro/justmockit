@@ -23,7 +23,6 @@ const mockResolverMiddleware = (req, res) => {
         const isHttpMethodEqual = request.method.toUpperCase() === mock.req.method.toUpperCase();
         const isPathEqual = request.path === mock.req.path;
         const isQueryEqual = util.isDeepStrictEqual(req.query, mock.req.query);
-        console.log(req.query)
         return isHttpMethodEqual && isPathEqual && (isQueryEqual || !mock.req.query || !req.query);
     }
 
